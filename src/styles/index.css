@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Neon';
+    src: url('/src/fonts/Neon-Font/Neon.ttf') format('ttf');
+    font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+header{
+    /*Adicionar a imagem*/
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 24vh;
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*Adicionar a fonte neon em todo o menu*/
+    font-family: 'Neon, Courier New', Courier, monospace;
+    height: 24vh;
+
+}
+
+
+#home::before{
+    content: url('/src/imgs/home-1.png');
+    display: block;
+}
+
+ul.nav{
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    
+}
+
+ul.nav li{
+    letter-spacing: 7px;
+    margin: 150px;
+    
+}
+
+a {
+    text-decoration: none;
+    font-size: 35px;
+    font: 'Neon';
+    color: rgb(255, 86, 238);
+}
+
+i{
+    color: rgb(255, 86, 238);
+}
+
+main{
+    background-image: url() no repeat, center, center;
+    background-size: cover;
+    height: 92vh;
+    
+}
